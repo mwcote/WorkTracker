@@ -3,7 +3,8 @@ import java.util.*;
 
 public class Customer
 {
-	public static void main(String [] args)
+	
+	/* public static void main(String [] args)
 	{
 		Customer me = new Customer(new Contact("Matt", "mwcote97@gmail.com", "781-690-1933"), new Address("104", "Pine Grove Street", "Needham", "Massachusetts", "02494"));
 		
@@ -26,7 +27,7 @@ public class Customer
 		me.printPayments();
 		
 		me.printTotals();
-	}
+	}*/
 	
 	private ArrayList<Double> payments;
 	
@@ -201,5 +202,10 @@ public class Customer
 		System.out.println("Total Time Spent: " + totalTime + " hrs");
 		
 		System.out.printf("Total Cost: $%.2f \n", totalCost);
+	}
+	
+	public String getName()
+	{
+		return contactInfo.getName();
 	}
 }
